@@ -13,11 +13,9 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 milestone_2.py: Main Python script for the Hangman Game.
 
 ## Installation
-1. Clone the repository to your local machine: git clone https://github.com/Federal2JZ/hangman596.git
-Nav
-2. Navigate to the project directory: ```cd hangman596```
-3. Run the Python script:
-```python milestone_2.py```
+1. Clone the repository to your local machine: ```git clone https://github.com/Federal2JZ/hangman596.git```.
+2. Navigate to the project directory: ```cd hangman596```.
+3. Run the Python script: ```python milestone_2.py```.
 
 ## License
  Accessed via the AiCore programme.
