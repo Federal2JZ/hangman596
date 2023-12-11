@@ -10,12 +10,13 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - Provides feedback on the validity of the users's input.
 
 ## File Structure
-milestone_2.py: Main Python script for the Hangman Game.
+milestone_2.py: Part of the process, created the variables for the game.
+milestone_3.py: Part of the process, Checked if the guessed character is in the word
 
 ## Installation
 1. Clone the repository to your local machine: ```git clone https://github.com/Federal2JZ/hangman596.git```.
 2. Navigate to the project directory: ```cd hangman596```.
-3. Run the Python script: ```python milestone_2.py```.
+3. Run the Python script: ```python milestone_3.py```.
 
 ## License
  Accessed via the AiCore programme.
