@@ -1,14 +1,14 @@
 import random
 
 # Create a list containing the names of your 5 favorite fruits.
-word_list = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
+favourite_fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
 
-def check_guess(guess):
+def check_guess(word, guess):
     # Convert the guess into lower case.
     guess = guess.lower()
 
     # Check if the guess is in the word.
-    if guess in word_list[0].lower():
+    if guess in word.lower():
         # Print a message saying "Good guess! {guess} is in the word."
         print(f"Good guess! {guess} is in the word.")
     else:
@@ -32,7 +32,7 @@ def ask_for_input():
             print("Invalid letter. Please, enter a single alphabetical character.")
     
     # Call the check_guess function to check if the guess is in the word.
-    check_guess(guess)
+    check_guess(random.choice(favourite_fruits), guess)
 
 # Call the ask_for_input function to test your code.
 ask_for_input()
