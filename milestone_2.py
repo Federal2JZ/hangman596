@@ -16,14 +16,14 @@ def print_feedback(valid_guess):
         print("Oops! That is not a valid input.")
 
 def main():
-    # Create a list containing the names of your 5 favorite fruits.
-    favorite_fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
+    # Create a list containing the names of your 5 favourite fruits.
+    favourite_fruits = ["Apple", "Banana", "Orange", "Grapes", "Mango"]
     
     # Print out the word list
-    print("Word List:", favorite_fruits)
+    print("Word List:", favourite_fruits)
 
     # Choose a random word from the list
-    word = choose_random_word(favorite_fruits)
+    word = choose_random_word(favourite_fruits)
     print(word)
 
     # Get user guess
