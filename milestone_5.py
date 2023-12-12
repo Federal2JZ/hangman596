@@ -70,3 +70,5 @@ def play_game(word_list):
 
 word_list = ["apple", "banana", "orange", "grapes", "mango"]
 play_game(word_list)
+
+#TODO add docstrings
