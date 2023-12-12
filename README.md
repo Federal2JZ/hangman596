@@ -13,11 +13,12 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 milestone_2.py: Part of the process, created the variables for the game.
 milestone_3.py: Part of the process, checked if the guessed character is in the word.
 milestone_4.py: Part of the process, created the game class.
+milestone_5.py: Final part of the process, project put all together. Use this to play game.
 
 ## Installation
 1. Clone the repository to your local machine: ```git clone https://github.com/Federal2JZ/hangman596.git```.
 2. Navigate to the project directory: ```cd hangman596```.
-3. Run the Python script: ```python milestone_3.py```.
+3. Run the Python script: ```python milestone_5.py```.
 
 ## License
  Accessed via the AiCore programme.
