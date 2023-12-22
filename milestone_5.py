@@ -14,7 +14,6 @@ class Hangman:
     - list_of_guesses (list): List of guessed letters.
 
     Methods:
-    - initialize_game(): Initialize the game with a random word.
     - check_guess(guess): Check if the guessed letter is in the word.
     - handle_correct_guess(guess): Handle the case when the guessed letter is correct.
     - handle_incorrect_guess(guess): Handle the case when the guessed letter is incorrect.
@@ -32,10 +31,6 @@ class Hangman:
         - num_lives (int): Number of lives the player has (default is 5).
         """
         self.word_list = word_list
-        self.initialize_game()
-
-    def initialize_game(self):
-        """Initialize the game with a random word."""
         self.word = random.choice(self.word_list).lower()
         self.word_guessed = ['_' for _ in self.word]
         self.num_letters = len(set(self.word))
