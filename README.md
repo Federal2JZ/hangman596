@@ -10,6 +10,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 - Provides feedback on the validity of the users's input.
 
 ## File Structure
+```plaintext
 hangman596/
 ├── milestones/
     ├── milestone_2.py: Part of the process, created the variables for the game.
@@ -18,6 +19,7 @@ hangman596/
     ├── milestone_5.py: Final part of the process, project put all together.
 ├── README.md
 ├── main.py
+```
 
 ## Installation
 1. Clone the repository to your local machine: ```git clone https://github.com/Federal2JZ/hangman596.git```.
