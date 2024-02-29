@@ -17,7 +17,6 @@ class Hangman:
     - check_guess(guess): Check if the guessed letter is in the word.
     - handle_correct_guess(guess): Handle the case when the guessed letter is correct.
     - handle_incorrect_guess(guess): Handle the case when the guessed letter is incorrect.
-    - display_current_word(): Display the current state of the guessed word.
     - display_result(message): Display the game result message.
     - ask_for_input(): Ask the user to input a letter and process the guess.
     """
@@ -47,11 +46,11 @@ class Hangman:
         guess = guess.lower()
 
         if guess in self.word:
-            self.handle_correct_guess(guess)
+            self._handle_correct_guess(guess)
         else:
-            self.handle_incorrect_guess(guess)
+            self._handle_incorrect_guess(guess)
 
-    def handle_correct_guess(self, guess):
+    def _handle_correct_guess(self, guess):
         """
         Handle the case when the guessed letter is correct.
 
@@ -67,7 +66,7 @@ class Hangman:
         if not '_' in self.word_guessed:
             self.display_result("Congratulations. You won the game!")
 
-    def handle_incorrect_guess(self, guess):
+    def _handle_incorrect_guess(self, guess):
         """
         Handle the case when the guessed letter is incorrect.
 
@@ -81,10 +80,6 @@ class Hangman:
         if self.num_lives == 0:
             self.display_result(f"You lost! The correct word was: {self.word}")
 
-    def display_current_word(self):
-        """Display the current state of the guessed word."""
-        print(f"Current word: {' '.join(self.word_guessed)}")
-
     def display_result(self, message):
         """
         Display the game result message.
@@ -97,7 +92,7 @@ class Hangman:
     def ask_for_input(self):
         """Ask the user to input a letter and process the guess."""
         while True:
-            self.display_current_word()
+            print(f"Current word: {' '.join(self.word_guessed)}")
             guess = input("Enter a single letter: ")
 
             if not (len(guess) == 1 and guess.isalpha()):
@@ -125,5 +120,6 @@ def play_game(word_list):
         if game.num_lives == 0 or not '_' in game.word_guessed:
             break
 
-word_list = ["apple", "banana", "orange", "grapes", "mango"]
-play_game(word_list)
+if __name__ == '__main__':
+    word_list = ["apple", "banana", "orange", "grapes", "mango"]
+    play_game(word_list)
